@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1500px" height="1500px" viewBox="0 0 1500 1500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Woman</title>
+    <g id="Woman" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1500" height="1500"></rect>
+        <circle id="Oval" stroke="#000000" stroke-width="10" cx="1325" cy="111" r="77"></circle>
+        <line x1="1279.5" y1="552.5" x2="1279.5" y2="721.5" id="Line" stroke="#000000" stroke-width="10" stroke-linecap="round"></line>
+        <line x1="1374.5" y1="552.5" x2="1374.5" y2="721.5" id="Line-Copy" stroke="#000000" stroke-width="10" stroke-linecap="round"></line>
+        <path d="M1175.3944,495.596495 C1196.5847,382.55475 1216.4296,316.351327 1234.92912,296.986228 C1262.67838,267.938578 1326.5,269.23237 1384.59062,279.325456 C1423.3177,286.05418 1454.02563,358.144526 1476.71441,495.596495" id="Path-2" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="bevel"></path>
+    </g>
+</svg>
