@@ -16,6 +16,8 @@ git init
 git add -A
 git commit -m 'deploy'
 
+git push -f git@github.com:bsnizek/spatialize.dk.git master:gh-pages
+
 cd -
 
 #npm run build

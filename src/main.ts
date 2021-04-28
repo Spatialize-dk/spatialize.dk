@@ -6,6 +6,7 @@ import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import VueScrollTo from 'vue-scrollto';
+import VueGtag from 'vue-gtag';
 
 import '@/styles/spatialize.scss';
 
@@ -13,6 +14,10 @@ Vue.config.productionTip = false;
 
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
+
+Vue.use(VueGtag, {
+  config: { id: 'G-F977L1Z0F8' },
+});
 
 Vue.use(VueScrollTo, {
   container: 'body',

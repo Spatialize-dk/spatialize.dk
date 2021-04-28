@@ -29,6 +29,7 @@
         </b-collapse>
       </b-navbar>
     </div>
+
     <section>
       <b-container>
         <b-row class="pt-0">
@@ -49,9 +50,13 @@
     <section id="vision">
       <b-container>
         <b-row>
-          <b-col cols="8" offset="2">
+          <b-col offset-xl="2">
             <h2> Vision </h2>
-            <p>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col cols-xl="6" cols="10" cols-lg="8" offset-lg="2" offset-xl="2" offset-md="1">
+            <div>
               Fremtidens bæredygtige udvikling bygger på inklusion. Deltagelse skaber muligheder for implementering af
               bæredygtige løsninger. Borgerne skal med på banen fra design til implementering og forvaltning.
 
@@ -69,7 +74,7 @@
               Smart City handler p.t. om opsamling og brug af kvantitative data såsom luftkvalitet, trafiktal,
               affaldshåndtering, belysning, parkering mm. Der mangler fokus på livskvalitet, tryghed og hvad vi synes om
               vores fysiske omgivelser - det vil vi lave om på.
-            </p>
+            </div>
           </b-col>
         </b-row>
       </b-container>
@@ -79,19 +84,19 @@
       <b-container>
 
         <b-row>
-          <b-col cols="10" offset="2">
+          <b-col cols="12" cols-lg="8" offset-lg="2">
             <h2 ref="vi-tilbyder"> Vi tilbyder </h2>
           </b-col>
         </b-row>
 
         <b-row>
-          <b-col cols="2" offset="2">
+          <b-col cols="2" offset="0" offset-xl="2" offset-lg="2" offset-md="1" cols-md="12">
             <img svg-inline svg-sprite fluid left class="img-fluid"
                  alt="Kortbaserede borgerinddragelsesprocesser"
                  src="./assets/svgs/mapbased-inclusion.svg"/>
 
           </b-col>
-          <b-col cols="6">
+          <b-col cols="8" cols-lg="12">
             <h3> Kortbaserede borgerinddragelsesprocesser</h3>
             <p>
               Vi hjælper dig med at strukturere din proces, fra start til slut, eller i specifikke nedslag.
@@ -99,30 +104,34 @@
           </b-col>
         </b-row>
 
-        <b-row>
-          <b-col cols="6" offset="2">
+        <b-row class="mt-5">
+          <b-col cols="8" cols-lg="12" offset-xl="2" offset-md="1" cols-md="12">
             <h3>Data, visualisering og kartografi</h3>
             <p>
               Vi er gode til at finde historier i data, sammenkøre dem med jeres egne og åbne data
               og visualiserer dem i letforståelig kartografi og infographics, både som billeder
               og interaktive kort til indlejring i hjemmesider.
+<!--              <b-button-->
+<!--                        class="my-2 my-lg-0 btn btn-dark"-->
+<!--                        type="submit">Se mere-->
+<!--              </b-button>-->
             </p>
           </b-col>
           <b-col cols="2">
             <img svg-inline svg-sprite
                  alt="Data, visualisering og kartografi"
-                 src="./assets/svgs/data-visualisering-kartografi.svg"
+                 src="./assets/pngs/good-bad.png"
                  class="img-fluid"/>
           </b-col>
         </b-row>
-        <b-row>
-          <b-col cols="2" offset="2">
+        <b-row class="mt-5">
+          <b-col cols="2" offset="0" offset-xl="2" offset-lg="2" offset-md="1" cols-md="12">
             <img svg-inline svg-sprite
                  alt="Spørgeskemaer"
                  src="./assets/svgs/questionnaires.svg"
                  class="img-fluid"/>
           </b-col>
-          <b-col cols="6">
+          <b-col cols="8" cols-lg="12">
             <h3>Kortbaserede undersøgelser</h3>
             <p>
               En undersøgelse er kun så god som sin spørgeskema.
@@ -133,21 +142,22 @@
         </b-row>
       </b-container>
     </section>
+
     <section id="team">
       <b-container>
         <b-row>
-          <b-col cols="10" offset="2">
+          <b-col cols="10" offset="2" cols-sm="12" offset-md=0>
             <h2>Team</h2>
           </b-col>
         </b-row>
         <b-row>
-          <b-col cols="2" offset="2">
+          <b-col cols="2" offset="0" offset-lg="2" offset-sm="2" offset-md="0">
             <img svg-inline svg-sprite
                  alt="Maja Møller"
                  src="./assets/svgs/woman.svg"
                  class="img-fluid"/>
           </b-col>
-          <b-col cols="6">
+          <b-col cols="10">
             <h3>Maja Møller</h3>
             <p>
               Maja har beskæftiget sig med borgerinddragelse i landskaber i 10 år.
@@ -160,13 +170,13 @@
           </b-col>
         </b-row>
         <b-row>
-          <b-col cols="2" offset="2">
+          <b-col cols="2" offset="0" offset-lg="2" offset-sm="2" offset-md="0">
             <img svg-inline svg-sprite
                  alt="Bernhard Snizek"
                  src="./assets/svgs/man.svg"
                  class="img-fluid"/>
           </b-col>
-          <b-col cols="6">
+          <b-col cols="10">
             <h3>Bernhard Snizek</h3>
             <p>
               Bernhard har arbejdet med GIS i 20 år både i
