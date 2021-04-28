@@ -17,6 +17,8 @@ Vue.use(BootstrapVueIcons);
 
 Vue.use(VueGtag, {
   config: { id: 'G-F977L1Z0F8' },
+  appName: 'Spatialize',
+  pageTrackerScreenviewEnabled: true
 });
 
 Vue.use(VueScrollTo, {
