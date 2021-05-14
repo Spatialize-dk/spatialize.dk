@@ -146,37 +146,37 @@
     <section id="team">
       <b-container>
         <b-row>
-          <b-col cols="10" offset="2" cols-sm="12" offset-md=0>
-            <h2>Team</h2>
+          <b-col cols="12" cols-lg="8" offset-lg="2">
+            <h2 ref="team"> Team </h2>
           </b-col>
         </b-row>
         <b-row>
-          <b-col cols="2" offset="0" offset-lg="2" offset-sm="2" offset-md="0">
+          <b-col cols="2" offset="0" offset-xl="2" offset-lg="2" offset-md="1" cols-md="12">
             <img svg-inline svg-sprite
                  alt="Maja Møller"
                  src="./assets/svgs/woman.svg"
                  class="img-fluid"/>
           </b-col>
-          <b-col cols="10">
+          <b-col cols="8" cols-lg="12">
             <h3>Maja Møller</h3>
             <p>
               Maja har beskæftiget sig med borgerinddragelse i landskaber i 10 år.
               Hun har specialiseret sig inden for digitale værktøjer til demokratisk
               kortlægning hvor alle interesserede har mulighed for at blive hørt.
             </p>
-            <b-link href="https://www.linkedin.com/in/maja-steen-m%C3%B8ller-71569186/" target="_blank">
+            <b-link href="https://www.linkedin.com/in/majasmoller/" target="_blank">
               <b-icon-linkedin class="icon-svg"></b-icon-linkedin>
             </b-link>
           </b-col>
         </b-row>
         <b-row>
-          <b-col cols="2" offset="0" offset-lg="2" offset-sm="2" offset-md="0">
+          <b-col cols="2" offset="0" offset-xl="2" offset-lg="2" offset-md="1" cols-md="12">
             <img svg-inline svg-sprite
                  alt="Bernhard Snizek"
                  src="./assets/svgs/man.svg"
                  class="img-fluid"/>
           </b-col>
-          <b-col cols="10">
+          <b-col cols="8">
             <h3>Bernhard Snizek</h3>
             <p>
               Bernhard har arbejdet med GIS i 20 år både i
@@ -195,8 +195,12 @@
       <b-container>
         <b-row>
           <b-col cols="12">
-            <h2>Spatialize</h2><br/>
-            <p>+45 2371 0046
+            <h2>Spatialize ApS</h2><br/>
+
+            <p>Bredgade 4<br/>1260 København K</p>
+            <p>
+              +45 3021 3245<br/>
+              +45 2371 0046
               <a href="mailto:hej@spatialize.dk"><br/>hej@spatialize.dk</a></p>
           </b-col>
         </b-row>
@@ -215,6 +219,14 @@ import HelloWorld from './components/HelloWorld.vue';
   },
 })
 export default class App extends Vue {
+
+  beforeMount() {
+    this.$gtag.query('event', 'screen_view', {
+      app_name: 'MyApp',
+      screen_name: 'Home page',
+    })
+  }
+
 }
 </script>
 
