@@ -19,6 +19,9 @@
             <b-nav-item v-scroll-to="'#team'">
               Team
             </b-nav-item>
+            <b-nav-item>
+              <language-selector></language-selector>
+            </b-nav-item>
             <b-nav-form>
               <b-button size="sm" v-scroll-to="'#contact'"
                         class="my-2 my-lg-0 btn btn-dark"
@@ -210,13 +213,22 @@
 </template>
 
 <script lang="ts">
-import {Component, Vue} from 'vue-property-decorator';
+import {Component, Vue, Watch} from 'vue-property-decorator';
 import HelloWorld from './components/HelloWorld.vue';
+import LanguageSelector from "@/components/LanguageSelector.vue";
+import LocalizedElement from "@/components/LocalizedElement.vue";
+// import store, { SetLanguage } from '@/store'
+import { mapState } from 'vuex';
 
 @Component({
   components: {
+    LanguageSelector,
     HelloWorld,
+    LocalizedElement
   },
+  computed: mapState([
+    'language'
+  ])
 })
 export default class App extends Vue {
 
@@ -226,6 +238,15 @@ export default class App extends Vue {
       screen_name: 'Home page',
     })
   }
+
+  // @Watch('setLanguage', { immediate: false, deep: false })
+  // setLanguage (newVal: string) {
+  //   console.log('XXXXXX', newVal)
+  //   if (newVal) {
+  //     // this.addParamsToLocation({ interval: String(newVal) })
+  //     console.log('XXXXXX', newVal)
+  //   }
+  // }
 
 }
 </script>
