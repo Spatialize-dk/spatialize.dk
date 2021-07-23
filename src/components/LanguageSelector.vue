@@ -34,17 +34,17 @@ export default class LanguageSelector extends Vue {
   }
 
 
-    sL(lang: String) {
+    public sL(lang: string) {
     store.dispatch({
       type: SetLanguage,
-      value: lang
-    })
+      value: lang,
+    });
   }
 
-  isActive(lang: string) {
-    console.log('isActive', lang)
+  public isActive(lang: string) {
+    // console.log('isActive', lang)
     if (lang === this.lng) {
-      return true
+      return true;
     }
   }
 

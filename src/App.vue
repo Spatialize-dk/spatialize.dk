@@ -215,8 +215,8 @@
 <script lang="ts">
 import {Component, Vue, Watch} from 'vue-property-decorator';
 import HelloWorld from './components/HelloWorld.vue';
-import LanguageSelector from "@/components/LanguageSelector.vue";
-import LocalizedElement from "@/components/LocalizedElement.vue";
+import LanguageSelector from '@/components/LanguageSelector.vue';
+import LocalizedElement from '@/components/LocalizedElement.vue';
 // import store, { SetLanguage } from '@/store'
 import { mapState } from 'vuex';
 

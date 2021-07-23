@@ -8,10 +8,10 @@ import {Component, Prop, Vue} from 'vue-property-decorator';
 @Component
 export default class LocalizedElement extends Vue {
 
-  foo = undefined;
+  private foo = undefined;
 
-  mount() {
-    this.foo = require('@/content/xxx.html')
+  public mount() {
+    this.foo = require('@/content/xxx.html');
   }
 
 }

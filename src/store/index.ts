@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 /**
  * The store where we hold global stuff.
@@ -9,13 +9,13 @@ Vue.use(Vuex)
  */
 const store = new Vuex.Store({
   state: {
-    language: 'dk'
+    language: 'dk',
   },
   mutations: {
-    setLanguage (state, sI) {
-      console.log('Store.mutations.setLanguage ', sI)
-      state.language = sI.value
-    }
+    setLanguage(state, sI) {
+      // console.log('Store.mutations.setLanguage ', sI);
+      state.language = sI.value;
+    },
   },
   actions: {
     setLanguage(context, lang) {
