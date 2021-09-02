@@ -19,9 +19,9 @@
             <b-nav-item v-scroll-to="'#team'">
               Team
             </b-nav-item>
-            <b-nav-item>
-              <language-selector></language-selector>
-            </b-nav-item>
+<!--            <b-nav-item>-->
+<!--              <language-selector></language-selector>-->
+<!--            </b-nav-item>-->
             <b-nav-form>
               <b-button size="sm" v-scroll-to="'#contact'"
                         class="my-2 my-lg-0 btn btn-dark"
@@ -143,6 +143,38 @@
             </p>
           </b-col>
         </b-row>
+        <b-row class="mt-5">
+          <b-col cols="8" cols-lg="12" offset-xl="2" offset-md="1" cols-md="12">
+            <h3>Design sprints</h3>
+            <p>
+              Vi er passionerede design thinkers og faciliterer design sprints for at løse komplicerede udfordringer igennem strukturerede forløb,
+              hvor alle bliver hørt, sammenhold skabt og ideer dokumenteret.
+              Efter en design sprint vi leverer – udover et konkret oplæg til et produkt eller koncept -
+              et backlog af ideer for videre behandling i fremtiden.
+            </p>
+          </b-col>
+          <b-col cols="2">
+            <img svg-inline svg-sprite
+                 alt="Design Sprints"
+                 src="./assets/svgs/design-sprints.svg"
+                 class="img-fluid"/>
+          </b-col>
+        </b-row>
+        <b-row class="mt-5">
+          <b-col cols="2" offset="0" offset-xl="2" offset-lg="2" offset-md="1" cols-md="12">
+            <img svg-inline svg-sprite
+                 alt="Softwareudvikling"
+                 src="./assets/svgs/software-udvikling.svg"
+                 class="img-fluid"/>
+          </b-col>
+          <b-col cols="8" cols-lg="12">
+            <h3>Softwareudvikling</h3>
+            <p>
+              Vi udvikler software i brugerdrevne, agile processer med fokus på høj
+              usability og integration med geodata services både in-house og ude i verdenen.
+            </p>
+          </b-col>
+        </b-row>
       </b-container>
     </section>
 
@@ -157,7 +189,7 @@
           <b-col cols="2" offset="0" offset-xl="2" offset-lg="2" offset-md="1" cols-md="12">
             <img svg-inline svg-sprite
                  alt="Maja Møller"
-                 src="./assets/svgs/woman.svg"
+                 src="./assets/pngs/maja-portrait.png"
                  class="img-fluid"/>
           </b-col>
           <b-col cols="8" cols-lg="12">
@@ -176,7 +208,7 @@
           <b-col cols="2" offset="0" offset-xl="2" offset-lg="2" offset-md="1" cols-md="12">
             <img svg-inline svg-sprite
                  alt="Bernhard Snizek"
-                 src="./assets/svgs/man.svg"
+                 src="./assets/pngs/bernie-portrait.png"
                  class="img-fluid"/>
           </b-col>
           <b-col cols="8">
@@ -194,6 +226,7 @@
         </b-row>
       </b-container>
     </section>
+
     <section class="page-footer" id="contact">
       <b-container>
         <b-row>
@@ -204,11 +237,12 @@
             <p>
               +45 3021 3245<br/>
               +45 2371 0046
-              <a href="mailto:hej@spatialize.dk"><br/>hej@spatialize.dk</a></p>
+              <a href="mailto:maja@spatialize.dk"><br/>hej@spatialize.dk</a></p>
           </b-col>
         </b-row>
       </b-container>
     </section>
+
   </div>
 </template>
 
@@ -224,19 +258,19 @@ import { mapState } from 'vuex';
   components: {
     LanguageSelector,
     HelloWorld,
-    LocalizedElement
+    LocalizedElement,
   },
   computed: mapState([
-    'language'
-  ])
+    'language',
+  ]),
 })
 export default class App extends Vue {
 
-  beforeMount() {
+  private beforeMount() {
     this.$gtag.query('event', 'screen_view', {
       app_name: 'MyApp',
       screen_name: 'Home page',
-    })
+    });
   }
 
   // @Watch('setLanguage', { immediate: false, deep: false })

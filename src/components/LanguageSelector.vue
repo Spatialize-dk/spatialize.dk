@@ -14,22 +14,22 @@
 
 <script lang="ts">
 import {Component, Vue, Watch} from 'vue-property-decorator';
-import store, {SetLanguage} from "@/store";
+import store, {SetLanguage} from '@/store';
 import { mapState } from 'vuex';
 
 @Component(
     {
       computed: mapState([
-          'language'])
-    }
+          'language']),
+    },
 )
 export default class LanguageSelector extends Vue {
 
-  lng = 'dk';
+  public lng = 'dk';
 
   @Watch('language', { immediate: true, deep: true })
-  ssL (newVal: any): void {
-    console.log('@Watch ', newVal)
+  public ssL(newVal: any): void {
+    // console.log('@Watch ', newVal);
     this.lng = newVal;
   }
 
